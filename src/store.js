@@ -1,12 +1,11 @@
 import {configureStore} from '@reduxjs/toolkit'
-import flashCardSlice from './components/flashCard/flashCardSlice'
+import flashSlice from "./components/flashCard/flashSlice";
 
 
 const store = configureStore({
     reducer: {
-        // auth: authSlice,
-        flashCards: flashCardSlice
-    }
+        flash: flashSlice,
+    },
 })
 
 export default store
